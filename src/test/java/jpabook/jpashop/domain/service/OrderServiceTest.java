@@ -59,7 +59,7 @@ public class OrderServiceTest {
     @Test
     public void 주문취소() throws Exception {
         //given
-        commitTestㅇ
+        System.out.println("커밋왜 안됨?");
 
         //when
 
