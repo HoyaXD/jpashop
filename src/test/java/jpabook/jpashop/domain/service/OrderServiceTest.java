@@ -31,7 +31,7 @@ public class OrderServiceTest {
     OrderRepository orderRepository;
 
     @Test
-    public void 상품주문() throws Exception {
+    public void product_order() throws Exception {
         //given
         Member member = new Member();
         member.setName("회원1");
@@ -56,22 +56,22 @@ public class OrderServiceTest {
 
     }
 
-    @Test
-    public void 주문취소() throws Exception {
+    //@Test
+    //public void 주문취소() throws Exception {
         //given
-        System.out.println("커밋왜 안됨?");
+    //    System.out.println("커밋왜 안됨?");
 
         //when
 
         //then
-    }
-    @Test
-    public void 상품주문_재고수량초과() throws Exception {
+    //}
+    //@Test
+    //public void 상품주문_재고수량초과() throws Exception {
         //given
 
         //when
 
         //then
-    }
+    //}
 
 }
