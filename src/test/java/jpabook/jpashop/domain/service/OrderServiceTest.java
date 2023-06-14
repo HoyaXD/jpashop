@@ -53,6 +53,7 @@ public class OrderServiceTest {
         Assert.assertEquals("주문 가격은 가격 * 수량이다.", 10000 * orderCount, getOrder.getTotalPrice());
         Assert.assertEquals("주문 수량만큼 재고가 줄어야 한다.", 8, book.getStockQuantity());
         System.out.println("test2");
+        System.out.println("test3");
 
     }
 /*
