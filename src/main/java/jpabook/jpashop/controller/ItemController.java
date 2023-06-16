@@ -67,14 +67,15 @@ public class ItemController {
 
         Book book = new Book();
         //id 를 통해서 남에 꺼에 접속할 수 있기에 id 확인을 비즈니스로직에서 id비교를 만들어야된다.
-        book.setId(form.getId());
+        /*book.setId(form.getId());
         book.setName(form.getName());
         book.setPrice(form.getPrice());
         book.setStockQuantity(form.getStockQuantity());
         book.setAuthor(form.getAuthor());
         book.setIsbn(form.getIsbn());
-
         itemService.saveItem(book);
+         */
+        itemService.updateItem(itemId, form.getName(), form.getPrice(), form.getStockQuantity());
         return "redirect:/items";
     }
 

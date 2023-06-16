@@ -41,7 +41,7 @@ public class OrderRepository {
             } else {
                 jpql += " and";
             }
-            jpql += " o.stauts = :status";
+            jpql += " o.status = :status";
         }
 
         //회원 이름 검색

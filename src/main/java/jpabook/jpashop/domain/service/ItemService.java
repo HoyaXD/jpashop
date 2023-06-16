@@ -22,6 +22,17 @@ public class ItemService {
         itemRepository.save(item);
     }
 
+    @Transactional
+    public Item updateItem(Long itemId, String name, int price, int stockQuantity){
+        Item findItem = itemRepository.findOne(itemId);
+        findItem.setName(name);
+        findItem.setPrice(price);
+        findItem.setStockQuantity(stockQuantity);
+        //find로 찾아온 값은 영속성으로 아무것도 선언할 필요 없다. 알아서 commit이 된다. 커밋이 되면 flush날림
+        //조금 귀찮더라도 찾아서 반환해야됨
+        return findItem;
+    }
+
     public List<Item> findItems() {
         return itemRepository.findAll();
     }
