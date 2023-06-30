@@ -11,6 +11,7 @@ spring:
     properties:
       hibernate:
         default_batch_fetch_size: 1000
+#        이 값의 사이즈를 정하는것이 중요하다
 #        show_sql: true
         format_sql: true
 logging:
