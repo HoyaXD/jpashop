@@ -55,7 +55,7 @@ public class OrderApiController {
     private final OrderQueryService orderQueryService;
     @GetMapping("/api/v3/orders")
     public List<jpabook.jpashop.domain.service.query.OrderDto> orderV3() {
-        List<jpabook.jpashop.domain.service.query.OrderDto> orderDtos = orderQueryService.orderV3();
+        return orderQueryService.orderV3();
     }
 
     @GetMapping("/api/v3.1/orders")
