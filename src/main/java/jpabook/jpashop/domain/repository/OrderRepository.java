@@ -103,6 +103,9 @@ public class OrderRepository {
 
     }
 
+    public List<Order> findAll(OrderSearch orderSearch) {
+        QOrder order = QOrder.order;
+    }
     public List<Order> findAllWithItem() {
         //fetch 조인 페이징 처리 불가능 하이버네이트는 경고 로그를 남기면서 모든 데이터 디비를 읽어오고 메모리에서 페이징해버린다(매우 위험).
         //1:다 패치조인은 하나만 사용해야한다 둘이상을 사용하면 데이터가 부정합하게 조회할 수 있따.
